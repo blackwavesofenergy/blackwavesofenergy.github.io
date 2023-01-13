@@ -1,0 +1,28 @@
+@font-face {
+    font-family: "Product Sans Thin Italic";
+    src: url("font/psti.ttf");
+}
+
+@font-face {
+    font-family: "Product Sans Thin";
+    src: url("font/pst.ttf");
+}
+
+body {
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+
+.bwoe-name {
+    font-family: Product Sans Thin Italic;
+    font-size: 64px;
+    text-transform: uppercase;
+    margin-top: 20%;
+}
+
+.bwoe-soon {
+    font-family: Product Sans Thin;
+    font-size: 35px;
+    text-transform: uppercase;
+}

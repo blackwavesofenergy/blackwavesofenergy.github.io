@@ -9,3 +9,12 @@ h2 {
     font-size: 65px;
     margin: 5px;
 }
+
+.sitenav {
+    list-style-type: none;
+    text-align: center;
+}
+
+.sitenav-item {
+    display: inline-block;
+}
