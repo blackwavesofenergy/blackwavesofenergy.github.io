@@ -1,0 +1,9 @@
+@font-face {
+    font-family: "magdiworks";
+    src: url("font/pfb.ttf");
+}
+
+h1 {
+    font-family: magdiworks;
+    font-size: 75px;
+}
