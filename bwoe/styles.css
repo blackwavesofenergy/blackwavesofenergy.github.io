@@ -14,11 +14,14 @@ body {
     color: white;
 }
 
+img {
+    max-width: 30%;
+}
+
 .bwoe-name {
     font-family: Product Sans Thin Italic;
     font-size: 64px;
     text-transform: uppercase;
-    margin-top: 20%;
 }
 
 .bwoe-soon {

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <title>MagdiWorks Form</title>
+    </head>
+    <body>
+        <header=><h1 id="title">MagdiWorks - Our Survey</h1>
+        <p id="description">Something something description.</p></header>
+        <form id="survey-form">
+        <fieldset>
+            <label id="name-label" for="name">Your Name:
+                <input id="name" type="text" placeholder="Enter your full name" required />
+            </label>
+            <label id="email-label" for="email">Your Email:
+                <input id="email" type="email" placeholder="Enter a valid email address" required />
+            </label>
+            <label id="number-label" for="number">How many MagdiWorks services have you used?
+                <input id="number" type="number" min="0" max="3" placeholder="Enter any" required />
+            </label>
+        </fieldset>
+
+        <hr>
+
+        <fieldset>
+            <p>Going into MagdiWorks, what are your primary interests? Select all that apply.</p>
+            <label for="radio-label-photography">Photography
+                <input id="checkbox-label-photography" type="checkbox" name="interest" value="photography"/>
+            </label>
+            <label for="checkbox-label-software">Software
+                <input id="checkbox-label-software" type="checkbox" name="interest" value="software"/>
+            </label>
+            <label for="checkbox-label-video">Video
+                <input id="checkbox-label-video" type="checkbox" name="interest" value="video/>
+            </label>
+            <label for="checkbox-label-multimedia">Multimedia
+                <input id="checkbox-label-multimedia" type="checkbox" name="interest" value="multimedia"/>
+            </label>
+            <label for="checkbox-label-other">Other
+                <input id="checkbox-label-other" type="checkbox" name="interest" value="other"/>
+            </label>
+        </fieldset>
+
+        <hr>
+
+        <fieldset>
+            <label id="dropdow-label" for="dropdown">Which MagdiWorks service interests you the most?
+                <select id="dropdown">
+                    <option value="1">Magdi Mahgoub (Photography & Other)</option>
+                    <option value="2">MagdiWorks (Projects and Files)</option>
+                    <option value="3">Black Waves of Energy (Media)</option>
+                </select>
+            </label>
+        </fieldset>
+
+        <hr>
+
+        <fieldset>
+            <p>Is this your first time using MagdiWorks?</p>
+            <label for="radio-yes">Yes
+                <input id="radio-yes" type="radio" name="first-time-use" value="radio-yes">
+            </label>
+            <label for="radio-no">No
+                <input id="radio-no" type="radio" name="first-time-use" value="radio-no">
+            </label>
+        </fieldset>
+
+        <hr>
+        <fieldset><p>Enter any other information if necessary.</p>
+        <textarea id="textarea" cols="30" rows="10"></textarea>
+        </fieldset>
+
+        <hr>
+        <input id="submit" type="submit" value="submit" />
+        </form>
+    </body>
+</html>
