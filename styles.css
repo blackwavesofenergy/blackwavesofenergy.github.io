@@ -11,6 +11,8 @@
 body {
     padding: 0;
     margin: 0;
+    background-color: black;
+   color: white;
 }
 
 h1 {
@@ -36,7 +38,7 @@ li {
 }
 
 a {
-    color: black;
+    color: white;
     text-decoration: none;
     font-size: 24px;
     padding: 31.5px;
@@ -46,6 +48,49 @@ a:hover {
     color: grey;
 }
 
-.bwoe {
-    font-family: 
+#picture-animation {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    position: relative;
 }
+
+
+.picture {
+    animation: kenburns 30s linear infinite;
+    background-size: cover;
+    background-position: 50%;
+    height: 100vh;
+    inset: 0;
+    opacity: 0;
+    position: absolute;
+    scale: 1.2;
+    width: 100vw;
+}
+
+.picture:nth-child(1) {
+    background-image: url("/photography/1.JPG");
+}
+
+.picture:nth-child(2) {
+    background-image: url("/photography/2.jpg");
+}
+
+.picture:nth-child(3) {
+    background-image: url("/photography/3.JPG");
+}
+
+@keyframes kenburns {
+    25% {
+      opacity: 1;
+    }
+  
+    50% {
+      opacity: .8;
+      scale: 1;
+    }
+  
+    60% {
+      opacity: 0;
+    }
+  }
