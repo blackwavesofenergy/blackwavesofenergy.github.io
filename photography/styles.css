@@ -1,0 +1,93 @@
+@font-face {
+  font-family: "Black";
+  src: url("font/psb.ttf");
+}
+
+@font-face {
+  font-family: "Light";
+  src: url("font/psl.ttf")
+}
+
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: white;
+  }
+  
+
+  header h1 {
+    text-align: center;
+    font-family: Black, sans-serif;
+    font-size: 72px;
+    margin: 5px;
+    text-transform: uppercase;
+    letter-spacing: .5rem;
+  }
+
+header ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+
+header li {
+    display: inline-block;
+    font-family: Light, sans-serif;
+}
+
+header a {
+    color: black;
+    text-decoration: none;
+    font-size: 24px;
+    padding: 31.5px;
+}
+
+a:hover {
+    color: grey;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 0;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+footer a {
+  margin: 0;
+  padding: 5px;
+  text-decoration: none;
+  color: black;
+}
+  
+.gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    max-width: 75%;
+    margin: 0 auto;
+    padding: 25px 25px;
+    overflow: hidden;
+  }
+  
+.gallery img {
+    width: 100%;
+    max-width: 200px;
+    height: 200px;
+    object-fit: cover;
+  }
+
+  .highlighted {
+    color: grey;
+}
