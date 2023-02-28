@@ -1,0 +1,336 @@
+body {
+    margin: 0;
+
+    background: linear-gradient(222deg, #827252, #96a9c9, #7d8833, #b2a795);
+    background-size: 800% 800%;
+
+    -webkit-animation: AnimationName 4s ease infinite;
+    -moz-animation: AnimationName 4s ease infinite;
+    animation: AnimationName 4s ease infinite;
+    padding-bottom: 15px;
+
+}
+
+.front {
+    font-size: 36px;
+    color: #F6F4F3;
+}
+
+.front img {
+    text-align: center;
+    max-width: 50%;
+    border-radius: 20px;
+    margin-top: -65px;
+    margin-bottom: -20px;
+}
+
+.index-div {
+    font-family: Roboto, Arial, sans-serif;
+    background-color: #F6F4F3;
+    color: #183059;
+    padding: 1px 20px 20px;
+    margin: 20px;
+    border-radius: 5px;
+    border: outset #183059;
+    text-align: center;
+}
+
+.index-div h2 {
+    border-bottom: 1px solid #183059;
+}
+
+.index-div p {
+    margin-top: -10px;
+}
+
+.centered-content {
+    text-align: center;
+}
+
+.index-div img {
+    max-width: 200px;
+    max-height: 175px;
+    float: right;
+    padding: 15px;
+    border-radius: 25px;
+}
+
+.scroll-element {
+    opacity: 0;
+}
+
+.current {
+    background-color: #183059;
+}
+
+.click-button {
+    font-family: Roboto, sans-serif;
+    background-color: #183059;
+    border: 1px #F6F4F3;
+    color: #F6F4F3;
+    padding: 5px 50px 5px 50px;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.click-button a {
+    text-decoration: none;
+    color: inherit;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+    z-index: 5;
+    margin: 0 auto;
+    padding: 0;
+    overflow: hidden;
+    background: #1e3c72; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #1e3c72 , #2a5298); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #1e3c72 , #2a5298); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    font-family: Roboto, Arial, sans-serif;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+
+nav li {
+    text-align: center;
+    margin: 0 auto;
+    display: inline-block;
+}
+
+nav li a {
+    display: block;
+    color: #DDDDDD;
+    text-align: center;
+    padding: 5px;
+    text-decoration: none;
+    width: 75px;
+}
+
+nav li a:hover:not(.active) {
+    background-color: #183059;
+}
+
+nav li a:hover {
+    background-color: #183059;
+}
+
+
+.footnote {
+    z-index: 5;
+    padding: 5px;
+    overflow: hidden;
+    background: #1e3c72; /* fallback for older browsers */
+    background: -webkit-linear-gradient(to left, #1e3c72 , #2a5298); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #1e3c72 , #2a5298); /* Other browsers */
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    font-family: Roboto, sans-serif;
+    color: #F6F4F3;
+    font-size: 12px;
+    border: 20px #F6F4F3;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+}
+
+.footnote a {
+    text-decoration: none;
+	color: lightskyblue;
+}
+.footnote a:visited {
+    color: lightskyblue;
+}
+
+.about-div {
+    max-width: 90%;
+    margin: 300px auto auto;
+    font-family: Roboto, Arial, sans-serif;
+    background-color: #F6F4F3;
+    color: #183059;
+    padding: 1px 20px 20px;
+    opacity: 0.8;
+    text-align: center;
+}
+
+#main-name {
+    font-size: 80px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: whitesmoke;
+    text-shadow:
+            -1px -1px 0 #000,
+            1px -1px 0 #000,
+            -1px 1px 0 #000,
+            1px 1px 0 #000;
+    margin: 50px 20px 20px;
+}
+
+.main-name-footer {
+    color: whitesmoke;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 900;
+    text-transform: uppercase;
+
+}
+
+iframe {
+    max-width: 100%;
+}
+
+.img-building {
+    width: 45%;
+    height: 45%;
+    margin: 0;
+    border-radius: 20px;
+    border: 5px outset #183059;
+}
+
+#contact-table {
+    text-align: center;
+    max-width: 30%;
+    font-size: larger;
+}
+
+.method {
+    color: #183059;
+    font-weight: 900;
+    padding: 10px;
+}
+
+.postbox {
+    font-size: smaller;
+}
+
+.contact-page {
+    background:url("/images/reception.jpg") !important;
+    opacity: 0.9;
+}
+
+.description {
+    max-width: 70%;
+    padding: 5px;
+}
+
+#about-table-container {
+    overflow-x: auto;
+    margin: 0 auto;
+}
+
+#about-table img {
+    height: 200px;
+    max-width: 300px;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#about-table {
+    text-align: center;
+}
+
+.full-opacity {
+    opacity: 1 !important;
+}
+
+.comment-name {
+    font-weight: 900;
+}
+
+.last-div {
+    margin-bottom: 25px;
+}
+
+input {
+    border-radius: 5px;
+    font-family: Roboto, sans-serif;
+    max-width: 100%;
+}
+
+textarea {
+    border-radius: 5px;
+    font-family: Roboto, sans-serif;
+    max-width: 100%;
+}
+
+video {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    transform: translateX(-50%) translateY(-50%);
+    background-size: cover;
+    transition: 3s opacity;
+    opacity: 0.9;
+}
+
+.index-div button {
+    max-width: 100%;
+}
+
+
+.review {
+    border-left: 1px solid #2a5298;
+    padding: 5px;
+    margin: 35px;
+    text-align: justify;
+}
+.review p {
+    text-align: left;
+    font-size: larger;
+    font-style: italic;
+}
+
+.review h4 {
+    text-align: right;
+}
+
+/* Gallery */
+
+.thumbnail {
+    width: 245px;
+}
+
+.view-box{
+    display: none;
+    opacity: 0;
+    z-index: 50;
+}
+
+.largeImage {
+    max-width: 99% !important;
+}
+
+/* Background Animations from www.gradient-animator.com, please ignore. */
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0 2%}
+    50%{background-position:100% 99%}
+    100%{background-position:0 2%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0 2%}
+    50%{background-position:100% 99%}
+    100%{background-position:0 2%}
+}
+@keyframes AnimationName {
+    0%{background-position:0 2%}
+    50%{background-position:100% 99%}
+    100%{background-position:0 2%}
+}
+
+
+

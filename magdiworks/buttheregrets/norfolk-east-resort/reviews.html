@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Reviews</title>
+    <!-- JavaScript / jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js/scroll.js"></script>
+    <script src="js/rise-up.js"></script>
+    <script src="js/comments.js"></script>
+    <!-- CSS and Fonts -->
+    <link type="text/css" href="css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+</head>
+<body onload="fetchComments()">
+
+<video id="bgvid"  autoplay muted loop>
+    <source src="video/about.webm" type="video/webm">
+    <source src="video/about.mp4" type="video/mp4">
+</video>
+
+<nav> <!-- Navbar -->
+    <ul class="nav">
+        <li> <a href="index.html"> Home </a> </li>
+        <li> <a href="about.html"> About </a> </li>
+        <li class="current"> <a href="reviews.html"> Reviews </a> </li>
+        <li> <a href="gallery.html"> Gallery </a> </li>
+        <li> <a href="contact.html"> Contact </a> </li>
+    </ul>
+</nav>
+
+    <div class="about-div">
+        <h2> There's just no better other. </h2>
+        <h4> Since its foundation, Norfolk East Resort has proudly been the golden standard of English holiday resorts. </h4>
+        <p> From critics' choice to customer's favourite, our holiday resort satisfies plenty of people - and for good
+    reason. </p>
+    </div>
+
+<div class="about-div">
+    <h2> Professional reviews </h2>
+    <div class="review"> <p> "Simply put, the best holiday resort in the entire East of England. It's just
+    amazing how everything smoothly works together." </p> <h4> - TripAdvisor</h4> </div>
+    <div class="review"> <p> "Norfolk East Resort is the gold
+    standard. The quality of everything is unbelieveable. Service is quite simply the greatest
+    we've ever experienced. Quite possibly the best British hotel there is, and that's a statement
+    we're not taking lightly." </p> <h4> - Oyster.co.uk</h4> </div>
+    <div class="review"><p> "In terms of activities, it has it all. It's quite possibly the most
+    diverse hotel resort. If you can withstand the weather, you're looking at one hell of a
+    holiday experience - Great Yarmouth finally has an attraction it can be truly proud of."
+    </p><h4> - Eastern Daily Press </h4></div>
+    <div class="review"><p> "It's so stress-free and relaxing, I've had so many fun memories. It's a hefty
+        fee, sure, but you're getting your money's worth on an experience that you will quite possibly
+        never forget. Incredible all the way through."
+    </p><h4> - The Telegraph </h4></div>
+    <div class="review"><p> "The hotel just <b> breathes </b> quality - it's detail to the fullest. Nothing
+        can really come quite close to the perfectionist attitudes the professionals at Norfolk East Resort
+        can achieve. It's certainly a contender for the best hotel in England."
+    </p><h4> - Harper's Bazaar </h4></div>
+
+
+</div>
+
+    <div class="about-div full-opacity last-div">
+        <h2> The visitor's book. </h2>
+        <h4> What do you think of our service? Enter a comment below and tell us. We'll get back to you! </h4>
+        <div id="dtext">
+            <h4> Enter your comment and ID no. given to you when using the service. </h4>
+            <input id="namebox" type="text" maxlength="24" size="25" placeholder="Name" />
+            <input id="id-number" type="text" size="10" placeholder="ID No." />
+            <br>
+            <br>
+            <textarea id="txt1" class="textbox" rows="6" cols="90"></textarea>
+            <br> <br>
+        </div>
+
+        <button class="click-button" onclick="saveComment()"> Post </button>
+        <button class="click-button" onclick="clearComment()"> Clear </button>
+
+        <h4> Previous Comments: </h4>
+        <div id="cmtlist"></div>
+    </div>
+
+<div class="footnote">
+    &copy; 2016 <span class="main-name-footer">Norfolk East Resort.</span> Written and coded by <a href="http://www.github.com/ButTheRegrets">
+    Magdi Mahgoub.</a>
+</div>
+</body>
+</html>

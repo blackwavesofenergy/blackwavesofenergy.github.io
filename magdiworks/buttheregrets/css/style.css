@@ -1,0 +1,95 @@
+.navbar .navbar-nav {
+    display: inline-block;
+    float: none;
+    vertical-align: top;
+}
+
+
+.jumbotron {
+    background: #DAD299;
+    background: -webkit-linear-gradient(to left, #DAD299 ,         #B0DAB9);
+    background: linear-gradient(to left, #DAD299 , #B0DAB9);
+    text-align: center;
+    width: 100%;
+}
+
+span.glyphicon-time, span.glyphicon-globe, span.glyphicon-education {
+    font-size: 2.5em;
+}
+
+span.icon-css3-01, span.icon-html5-01, span.icon-prog-js02,
+span.icon-prog-python, span.icon-prog-cplusplus, span.icon-prog-java, span.icon-com-system, span.icon-file-tex,
+span.icon-os-linux_1_ {
+    font-size: 3.5em;
+}
+
+.jumbotron {
+    color: black;
+}
+
+.center {
+    text-align: center;
+}
+
+.btn-inverse:hover {
+    .buttonBackground(#454545, #262626);
+}
+
+.pull-left {
+    margin-right: 10px;
+}
+
+.navbar-primary .navbar {
+
+    background: #004FF9; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #004FF9 , #F0F8FF); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #004FF9 , 	#F0F8FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border-bottom:none; }
+.navbar-primary .navbar .nav > li > a {color: #414345;}
+.navbar-primary .navbar .nav > li > a:hover {
+
+    background: #16222A; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #16222A , #3A6073); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #16222A , #3A6073); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.navbar-primary .navbar .nav .active > a,.navbar .nav .active > a:hover {color: #fff; background-color: #00223E;}
+.navbar-primary .navbar .nav li > a .caret, .tnav .navbar .nav li > a:hover .caret {border-top-color: #fff;border-bottom-color: #fff;}
+.navbar-primary .navbar .nav > li.dropdown.open.active > a:hover {}
+.navbar-primary .navbar .nav > li.dropdown.open > a {color: #fff;background-color: #00223E; border-color: #fff;}
+.navbar-primary .navbar .nav > li.dropdown.open.active > a:hover .caret, .tnav .navbar .nav > li.dropdown.open > a .caret {border-top-color: #fff;}
+.navbar-primary .navbar .navbar-brand {color:#fff;}
+.navbar-primary .navbar .nav.pull-right {margin-left: 10px; margin-right: 0;}
+.navbar-xs .navbar-primary .navbar { min-height:28px; height: 28px; }
+.navbar-xs .navbar-primary .navbar .navbar-brand{ padding: 0px 12px;font-size: 16px;line-height: 28px; }
+.navbar-xs .navbar-primary .navbar .navbar-nav > li > a {  padding-top: 0px; padding-bottom: 0px; line-height: 28px; }
+
+
+body {
+    position: relative;
+}
+
+.scroll-in {
+    opacity: 0; !important;
+}
+
+.text-muted {
+    background-color: lightgray;
+}
+
+blockquote {
+    border-left: 0 !important;
+}
+
+/* Fonts. */
+
+body {
+    font-family: "Montserrat", "Helvetica Neue", "Arial", sans-serif !important;
+}
+
+.jumbotron h1 {
+    text-transform: uppercase;
+}
+
+.page-header, .navbar-brand {
+    text-transform: uppercase;
+}

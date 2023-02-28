@@ -1,0 +1,12 @@
+body {
+  padding: 20px;
+}
+
+.bg-primary, .bg-success, .bg-info, .bg-warning {
+  text-align: center;
+}
+
+.blackstar {
+  text-align: center;
+  font-size: 999%;
+}
