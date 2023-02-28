@@ -29,3 +29,7 @@ img {
     font-size: 35px;
     text-transform: uppercase;
 }
+
+video {
+    max-width: 80%;
+}
