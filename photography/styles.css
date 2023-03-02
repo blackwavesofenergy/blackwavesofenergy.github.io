@@ -1,11 +1,11 @@
 @font-face {
   font-family: "Black";
-  src: url("font/psb.ttf");
+  src: url("/font/psb.ttf");
 }
 
 @font-face {
   font-family: "Light";
-  src: url("font/psl.ttf")
+  src: url("/font/psl.ttf")
 }
 
 * {
