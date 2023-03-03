@@ -8,31 +8,64 @@
     src: url("font/psl.ttf")
 }
 
-body {
-    background-color: white;
-    color: black;
+@font-face {
+  font-family: "Black";
+  src: url("/font/psb.ttf");
 }
 
-h1 {
+@font-face {
+  font-family: "Light";
+  src: url("/font/psl.ttf")
+}
+
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: sans-serif;
+    background-color: white;
+  }
+
+  main {
+    flex: 1;
+  }
+  
+
+  header h1 {
     text-align: center;
     font-family: Black, sans-serif;
     font-size: 72px;
     margin: 5px;
-    margin-top: 20%;
     text-transform: uppercase;
     letter-spacing: .5rem;
-}
+  }
 
-ul {
+header ul {
     margin: 0;
     padding: 0;
     list-style: none;
     text-align: center;
 }
 
-li {
+header li {
     display: inline-block;
     font-family: Light, sans-serif;
+}
+
+header a {
+    color: black;
+    text-decoration: none;
+    font-size: 24px;
+    padding: 31.5px;
+}
+
+a:hover {
+    color: grey;
 }
 
 a {
@@ -53,8 +86,8 @@ footer {
     bottom: 0;
     padding: 0;
     margin: 0;
-    position: fixed;
     width: 100%;
+    flex-shrink: 0;
 }
 
 footer a {
@@ -65,7 +98,7 @@ footer a {
 
 
 
-  @media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: dark) {
     body {
         background-color: black;
         color: white;
