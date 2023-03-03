@@ -99,3 +99,21 @@ footer a {
   .highlighted {
     color: grey;
 }
+
+@media (prefers-color-scheme: dark) {
+  body {
+      background-color: black;
+      color: white;
+  }
+  
+  a {
+      color: white;
+  }
+
+  header a {
+      color: white;
+  }
+
+  footer a {
+      color: white;
+  }
