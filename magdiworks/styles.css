@@ -25,6 +25,19 @@ body {
     main {
   flex: 1;
 }
+
+ol {
+  text-align: center;
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+h2 {
+  text-align: center;
+  display: flex;
+  justify-content: space-evenly;
+}
     
   
 header h1 {
