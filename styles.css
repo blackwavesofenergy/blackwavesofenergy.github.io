@@ -34,7 +34,7 @@ header h1 {
     margin: 5px;
     text-transform: uppercase;
     letter-spacing: .5rem;
-    animation: fadeIn 1s forwards;
+    animation: fadeIn 3s forwards;
   }
 
 header ul {
@@ -47,7 +47,6 @@ header ul {
 header li {
     display: inline-block;
     font-family: Light, sans-serif;
-    animation: fadeIn 3s forwards;
 }
 
 header a {
@@ -70,7 +69,6 @@ footer {
     margin: 0;
     width: 100%;
     flex-shrink: 0;
-    animation: fadeIn 3s forwards;
   }
 
   footer a {
