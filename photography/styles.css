@@ -21,9 +21,6 @@
     min-height: 100vh;
   }
 
-  main {
-    flex: 1;
-  }
   
 
   header h1 {
@@ -87,6 +84,7 @@ footer a {
     margin: 0 auto;
     padding: 25px;
     overflow: hidden;
+    flex: 1;
   }
   
 .gallery img {
