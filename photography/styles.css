@@ -21,6 +21,10 @@
     min-height: 100vh;
   }
 
+  main {
+    flex: 1;
+  }
+
   
 
   header h1 {
@@ -84,7 +88,6 @@ footer a {
     margin: 0 auto;
     padding: 25px;
     overflow: hidden;
-    flex: 1;
   }
   
 .gallery img {
@@ -92,10 +95,17 @@ footer a {
     max-width: 175px;
     height: 175px;
     object-fit: cover;
+    top: 0;
+    position: relative;
   }
 
   .highlighted {
     color: grey;
+}
+
+img:hover {
+  top: -5px;
+  transition: top ease 0.25s;
 }
 
 @media (prefers-color-scheme: dark) {
