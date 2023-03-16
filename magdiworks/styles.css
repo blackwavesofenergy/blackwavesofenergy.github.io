@@ -47,6 +47,7 @@ header h1 {
       margin: 5px;
       text-transform: uppercase;
       letter-spacing: .5rem;
+      user-select: none;
     }
   
 header ul {
