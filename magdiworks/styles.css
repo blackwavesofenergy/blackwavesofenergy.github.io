@@ -72,6 +72,20 @@ header ul {
   a:hover {
       color: grey;
   }
+
+.elements {
+  background-color: #F2F3F5;
+  padding-top: 75px;
+  padding-bottom: 75px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.elements a {
+  text-decoration: none;
+  color: black;
+  font-style: italic;
+}
   
 footer {
     display: flex;
@@ -91,7 +105,7 @@ footer {
     color: black;
   }
   
-    .highlighted {
+  .highlighted {
       color: grey;
   }
 
