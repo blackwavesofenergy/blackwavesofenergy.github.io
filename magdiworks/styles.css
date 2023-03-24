@@ -84,7 +84,10 @@ header ul {
 .elements a {
   text-decoration: none;
   color: black;
-  font-style: italic;
+}
+
+.elements a:hover {
+  border: 3px solid white;
 }
   
 footer {
@@ -113,6 +116,10 @@ footer {
     body {
         background-color: black;
         color: white;
+    }
+
+    .elements a:hover {
+      border: 3px solid black;
     }
     
     a {
