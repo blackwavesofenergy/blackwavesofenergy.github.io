@@ -1,63 +1,127 @@
 @font-face {
-    font-family: "Product Sans Thin Italic";
-    src: url("font/psti.ttf");
+    font-family: teletextRegular;
+    src: url(fonts/Teletext50.otf)
 }
 
 @font-face {
-    font-family: "Product Sans Thin";
-    src: url("font/pst.ttf");
+    font-family: teletextSemiCondensed;
+    src: url(fonts/Teletext50-semicondensed.otf)
 }
 
-* {
-    box-sizing: border-box;
+@font-face {
+    font-family: teletextExtended;
+    src: url(fonts/Teletext50-extended.otf)
 }
 
 body {
-    margin: 0;
-    font-family: Product Sans Thin;
     background-color: black;
     color: white;
+    margin: 0;
+    padding: 0;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
     min-height: 100vh;
+}
+
+.content {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20vh;
+    max-width: 100%;
+}
+
+.container {
+    flex: 1;
+}
+
+
+.links {
+    font-variant: small-caps;
+    font-size: 32pt;
+    margin-top: 12vh;
+    margin-left: 2vh;
+    flex: 1;
 }
 
 main {
     flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    overflow: hidden;
+    margin-top: 2.5vh;
+    margin-right: 5vh;
 }
 
-
-.bwoe-soon {
-    font-size: 20px;
-    text-transform: lowercase;
-}
-
-video {
-    width: 75vw;
-    height: 75vh;
-}
-
-footer {
-    display: flex;
+.hyellow {
+    font-family: teletextExtended;
+    color: yellow;
+    font-size: 54pt;
+    display: grid;
+    text-align: center;
     justify-content: center;
     align-items: center;
     bottom: 0;
-    width: 100%;
-    flex-shrink: 0;
-  }
-  
-  footer a {
+    padding: 0;
     margin: 0;
-    padding: 5px;
-    text-decoration: none;
-    color: white;
-  }
+    width: 100%;
+    margin-top: auto;
+    padding-bottom: 5vh;
+}
 
-.tl {
-    font-size: 0.85em;
+
+
+
+ul, li, a {
+    color: white;
+    text-decoration: none;
+    list-style: none;
+    font-family: teletextSemiCondensed;
+}
+
+
+/*for links*/
+#flickr-link:hover {
+    color: transparent;
+    background-image: linear-gradient(to right, #0063dc, #ff0084); /* Set your gradient colors */
+    background-clip: text;
+    -webkit-background-clip: text;
+    position: relative;
+    z-index: 1;
+}
+
+#github-link:hover {
+    color: transparent;
+    background-image: linear-gradient(to right, #4078c0, #f5f5f5); /* Set your gradient colors */
+    background-clip: text;
+    -webkit-background-clip: text;
+    position: relative;
+    z-index: 1;
+}
+
+#backloggd-link:hover {
+    color: #badefc;
+    position: relative;
+    z-index: 1;
+}
+
+#lastfm-link:hover {
+    color: #d51007;
+    position: relative;
+    z-index: 1;
+}
+
+#discord-link:hover {
+    color: #5865f2;
+    position: relative;
+    z-index: 1;
+}
+
+#youtube-link:hover {
+    color: transparent;
+    background-image: linear-gradient(to right, #ff0000, #f5f5f5); /* Set your gradient colors */
+    background-clip: text;
+    -webkit-background-clip: text;
+    position: relative;
+    z-index: 1;
 }
