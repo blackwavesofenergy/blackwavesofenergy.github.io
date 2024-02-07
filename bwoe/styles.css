@@ -42,7 +42,7 @@ body {
 .links {
     font-variant: small-caps;
     font-size: 32pt;
-    margin-top: 12vh;
+    margin-top: 8.5vh;
     margin-left: 2vh;
     flex: 1;
 }
@@ -120,6 +120,15 @@ ul, li, a {
 #youtube-link:hover {
     color: transparent;
     background-image: linear-gradient(to right, #ff0000, #f5f5f5); /* Set your gradient colors */
+    background-clip: text;
+    -webkit-background-clip: text;
+    position: relative;
+    z-index: 1;
+}
+
+#steam-link:hover {
+    color: transparent;
+    background-image: linear-gradient(to right, #06183b, #137daf); /* Set your gradient colors */
     background-clip: text;
     -webkit-background-clip: text;
     position: relative;
