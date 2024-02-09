@@ -13,11 +13,11 @@
             <ul class="sitenav">
                 <li><a href=#><span class="highlighted">MagdiWorks</span></a></li>
                 <li><a href="/photography/photo.html">Photography</a></span></li>
-                <li><a href="/bwoe/bwoe.html" target="_blank">Black Waves of Energy</a></li>
+                <li><a href="/bwoe/bwoe.html" target="_blank">bwoe</a></li>
                 <li><a href="/404page.html" target="_blank">My CV</a></li>
             </ul>
           </header>
-    <h2>FreeCodeCamp</h2>
+    <h2>FreeCodeCamp ▼</h2>
     <ol>
         <li class="elements"><a href=fcc1/fcc1.html>FCC1 - Survey Form</a></li>
         <li class="elements"><a href=fcc2/fcc2.html>FCC2 - Tribute Page</a></li>
@@ -25,17 +25,25 @@
         <li class="elements"><a href="fcc4/fcc4.html">FCC4 - Product Landing Page</a></li>
         <li class="elements"><a href="fcc5/fcc5.html">FCC5 - Personal Portfolio Webpage</a></li>
     </ol>
-    <h2>Others</h2>
+    <h2>Others ▼</h2>
     <ol>
-            <li class="elements">Mkdir Example</li>
+            <li class="elements">bwoe - In Development</li>
             <li class="elements">WordPress Example</li>
             <li class="elements"><a href="buttheregrets/index.html">My Old Website</a></li>
     </ol>
-        </main>
-        <footer>
+    </main>
+    <footer>
             <a href="https://www.flickr.com/photos/blackwavesofenergy/" target="_blank"><i class="fa-brands fa-flickr fa-4x"></i></a>
             <a href="https://github.com/blackwavesofenergy" target="_blank"><i class="fa-brands fa-square-github fa-4x"></i></a>
             <a href="mailto:admin@magdimahgoub.co.uk" target="_blank"><i class="fa-solid fa-square-envelope fa-4x"></i></a>
-        </footer>
+    </footer>
+    <script>
+    function toggleDropdown(id) {
+                var dropdown = document.getElementById(id);
+                dropdown.classList.toggle('visible');
+                var title = document.querySelector(`#${id}.dropdown-title`);
+                title.classList.toggle('open');
+    }
+    </script>
     </body>
 </html>
