@@ -4,6 +4,7 @@ const posts = [
         content: [
             "Games are fun."
         ],
+        date: "2024-01-24",
         tag: "tag-game"
     },
 
@@ -13,6 +14,7 @@ const posts = [
             "Internet is hell.",
             "Fuck the internet."
         ],
+        date: "2024-01-24",
         tag: "tag-internet"
     },
 
@@ -23,6 +25,7 @@ const posts = [
             "It keeps the demons away.",
             "Too bad it's winter..."
         ],
+        date: "2024-01-24",
         tag: "tag-photo"
     },
 
@@ -33,6 +36,8 @@ const posts = [
             "Will I get a job with this? Probably not.",
             "Will I learn something from this?",
             "I'd rather sit at home and play video games all day."
-        ]
+        ],
+        date: "2024-01-24",
+        tag: "tag-other"
     }
 ];
