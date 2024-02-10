@@ -3,14 +3,15 @@ document.addEventListener("DOMContentLoaded", function () {
         const postElement = document.createElement("div");
         postElement.classList.add("post");
         postElement.classList.add(post.tag);
+        const postDate = new Date(post.date); // Convert date string to a Date object
+        const formattedDate = `${postDate.getDate().toString().padStart(2, '0')}/${(postDate.getMonth() + 1).toString().padStart(2, '0')}/${postDate.getFullYear()}`;
         postElement.innerHTML = `
-            <h2>${post.title}</h2>
+            <h2>${post.title} <time datetime="${post.date}">${formattedDate}</time></h2> <!-- Add time element with formatted date -->
             ${post.content.map(paragraph => `<p>${paragraph}</p>`).join('')}
         `;
         return postElement;
     }
-
-function loadPosts() {
+    function loadPosts() {
         const postsContainer = document.getElementById("posts-container");
 
         posts.forEach(post => {
@@ -18,35 +19,6 @@ function loadPosts() {
             postsContainer.appendChild(postElement);
         });
     }
+
     loadPosts();
 });
-
-/* Filter tags on links
-    function showTagGame() {
-        console.log("showTagGame function called");
-        document.querySelector(".tag-game").style.display = "block";
-        document.querySelector(".tag-internet").style.display = "none";
-        document.querySelector(".tag-photo").style.display = "none";
-        document.querySelector(".tag-other").style.display = "none";
-    }
-
-    function showTagInternet() {
-        document.querySelector(".tag-game").style.display = "none";
-        document.querySelector(".tag-internet").style.display = "block";
-        document.querySelector(".tag-photo").style.display = "none";
-        document.querySelector(".tag-other").style.display = "none";
-    }
-
-    function showTagPhoto() {
-        document.querySelector(".tag-game").style.display = "none";
-        document.querySelector(".tag-internet").style.display = "none";
-        document.querySelector(".tag-photo").style.display = "block";
-        document.querySelector(".tag-other").style.display = "none";
-    }
-
-    function showTagOther() {
-        document.querySelector(".tag-game").style.display = "none";
-        document.querySelector(".tag-internet").style.display = "none";
-        document.querySelector(".tag-photo").style.display = "none";
-        document.querySelector(".tag-other").style.display = "block";
-    } */

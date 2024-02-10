@@ -50,6 +50,7 @@ body {
     height: 10.2vh;
     margin-left: 40px;
     display: grid;
+    cursor: pointer;
 }
 
 .container {
@@ -74,10 +75,6 @@ body {
     padding-top: 0;
 }
 
-.tag-game h2 {
-    color: red;
-}
-
 .links {
     font-variant: small-caps;
     font-size: 24pt;
@@ -88,12 +85,12 @@ body {
     color: yellow;
     margin: 0;
     border: 0;
+    padding-top: 0.5vh;
 }
 
 h2 {
     font-family: teletextRegular;
     font-size: 24pt;
-    color: cyan;
 }
 
 main {
@@ -127,10 +124,22 @@ main p {
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
-    width: 40%;
+    width: 95%;
     height: 1px;
     background-color: white;
 
+}
+
+
+#posts-container {
+    padding-top: 1.2vh;
+}
+
+time {
+    font-size: 8pt;
+    margin-left: -1vw;
+    padding: 0;
+    
 }
 
 ul, li, a {
@@ -160,6 +169,24 @@ p {
 
 #footer a {
     color: #ff0000;
+}
+
+/*for tags*/
+
+.tag-game h2, #tag-game-id:hover {
+    color: red;
+}
+
+.tag-internet h2, #tag-internet-id:hover {
+    color: cyan;
+}
+
+.tag-photo h2, #tag-photo-id:hover {
+    color: magenta;
+}
+
+.tag-other h2, #tag-other-id:hover {
+    color: yellow;
 }
 
 /*for links*/
