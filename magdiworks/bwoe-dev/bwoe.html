@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+    <title>bwoe</title>
+</head>
+<body style="background-color: black;">
+
+<div class="container">
+        <div class="container-adjust">
+            <div class="logo-container">
+                <!-- <h1 class="logo">bwoe</h1> -->
+                <img src="assets/logo.png" class="logo">
+            </div>
+        <ul class="tags">
+            <li><a href="#" onclick="filterPosts('tag-game')">game and game design</a></li>
+            <li><a href="#" onclick="filterPosts('tag-internet')">the internet is hell</a></li>
+            <li><a href="#" onclick="filterPosts('tag-photo')">photography and the outdoors</a></li>
+            <li><a href="#" onclick="filterPosts('tag-other')">other shit you won't read</a></li>
+        </ul>
+        <ul class="links">
+            <li><a href="https://flickr.com/photos/blackwavesofenergy/" id="flickr-link">Flickr</a></li>
+            <li><a href="https://github.com/blackwavesofenergy" id="github-link">GitHub</a></li>
+            <li><a href="https://backloggd.com/u/bwoe/" id="backloggd-link">Backloggd</a></li>
+            <li><a href="https://last.fm/user/bwofenergy" id="lastfm-link">Last.fm</a></li>
+            <li><a href="https://discordapp.com/users/1067924079857905714" id="discord-link">Discord</a></li>
+            <li><a href="https://youtube.com/@Bakumatsuroman" id="youtube-link">YouTube</a></li>
+            <li><a href="https://steamcommunity.com/id/bwoe/" id="steam-link">Steam</a></li>
+            <li><a href="https://psnprofiles.com/bwofenergy" id="playstation-link">PlayStation</a></li>
+        </ul>
+    </div>
+    <p id="footer">Designed and maintained by <a href="http://www.magdimahgoub.co.uk">Magdi Mahgoub</a></p>
+</div>
+
+<main id="main-content" class="main-content">
+    <div class="intro">
+    <h1 class="hyellow"> What is 'bwoe'?</h1>
+    <p>bwoe is Magdi Mahgoub - a 27-year-old photographer, graphic designer, web developer, video game appreciator, university dropout, guitarist, cinephile, and general nutcase.</p>
+    </div>
+    <div id="posts-container"></div>
+</main>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+<script src="posts.js"></script>
+<script src="script.js"></script>
+<script>
+        function filterPosts(tag) {
+        console.log("Filtering posts by tag:", tag);
+        const allPosts = document.querySelectorAll('.post');
+        allPosts.forEach(post => {
+            console.log("Post:", post);
+            if (post.classList.contains(tag)) {
+                console.log("Post matches tag:", tag);
+                post.style.display = "block"; // Show posts that match the selected tag
+            } else {
+                console.log("Post doesn't match tag:", tag);
+                post.style.display = "none"; // Hide posts that don't match the selected tag
+            }
+        });
+    }
+</script>
+</body>
+</html>
