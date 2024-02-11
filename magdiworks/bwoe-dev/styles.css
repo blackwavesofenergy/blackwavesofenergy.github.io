@@ -91,6 +91,7 @@ body {
 h2 {
     font-family: teletextRegular;
     font-size: 24pt;
+    posit
 }
 
 main {
@@ -169,6 +170,12 @@ p {
 
 #footer a {
     color: #ff0000;
+}
+
+.dot-span {
+    padding: 0;
+    margin-left: -0.3em;
+    margin-right: -0.2em;
 }
 
 /*for tag posts*/
