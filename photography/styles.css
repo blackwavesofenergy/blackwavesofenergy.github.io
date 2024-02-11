@@ -89,7 +89,28 @@ footer a {
     margin: 0 auto;
     padding: 25px;
     overflow: hidden;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.8s ease, visibility 0s 0.5s;
   }
+  
+  body.loaded .gallery {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.8s ease, visibility 0s;
+  }
+
+.gallery img {
+  opacity: 0;
+  transform: translateY(-30%);
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+body.loaded .gallery img {
+  opacity: 1;
+  transform: translateY(0);
+}
+
   
 .gallery img {
     width: 100%;

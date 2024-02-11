@@ -50,6 +50,21 @@
     <a href="https://www.flickr.com/photos/blackwavesofenergy/52710997192/" target="_blank"><img src="gallery/29.jpeg" loading="lazy"></a>
     <a href="https://www.flickr.com/photos/blackwavesofenergy/52702131713/" target="_blank"><img src="gallery/30.jpeg" loading="lazy"></a>
     </div>
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+          var galleryImages = document.querySelectorAll('.gallery img');
+          var loadedCount = 0;
+      
+          galleryImages.forEach(function(img) {
+              img.addEventListener('load', function() {
+                  loadedCount++;
+                  if (loadedCount === galleryImages.length) {
+                      document.body.classList.add('loaded');
+                  }
+              });
+          });
+      });
+      </script>
   </main>
 <footer>
   <a href="https://www.flickr.com/photos/blackwavesofenergy/" target="_blank"><i class="fa-brands fa-flickr fa-4x"></i></a>

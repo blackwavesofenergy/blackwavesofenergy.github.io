@@ -1,20 +1,21 @@
 const posts = [
     {
-        title: "Game stuff",
+        title: "REVIEW | metal gear solid",
         content: [
-            "Games are fun."
+            "real my full review here",
+            "It's no secret how poorly the 5th generation of consoles aged."
         ],
-        date: "2024-01-24",
+        date: "2024-02-11",
         tag: "tag-game"
     },
 
     {
-        title: "Internet stuff",
+        title: "the origin of 'bwoe'",
         content: [
-            "Internet is hell.",
-            "Fuck the internet."
+            "'bwoe' stands for 'black waves of energy'."
+
         ],
-        date: "2024-01-24",
+        date: "2024-02-10",
         tag: "tag-internet"
     },
 

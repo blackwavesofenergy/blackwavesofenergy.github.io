@@ -91,7 +91,6 @@ body {
 h2 {
     font-family: teletextRegular;
     font-size: 24pt;
-    posit
 }
 
 main {
@@ -138,7 +137,7 @@ main p {
 
 time {
     font-size: 8pt;
-    margin-left: -1vw;
+    margin-left: -16px;
     padding: 0;
     
 }
