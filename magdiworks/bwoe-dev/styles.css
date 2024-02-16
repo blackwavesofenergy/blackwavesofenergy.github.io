@@ -135,6 +135,10 @@ main p {
     padding-top: 1.2vh;
 }
 
+#posts-container .link-header {
+    padding-left: 4px;
+}
+
 time {
     font-size: 8pt;
     margin-left: -16px;
@@ -149,6 +153,11 @@ ul, li, a {
     font-family: teletextSemiCondensed;
 }
 
+.link-header {
+    font-variant: small-caps;
+    font-size: 10pt;
+    padding: 0;
+}
 
 p {
     font-family: teletextSemiCondensed;
@@ -179,7 +188,7 @@ p {
 
 /*for tag posts*/
 
-.tag-game h2, #tag-game-id:hover {
+.tag-game h2, #tag-game-id:hover, .tag-game .link-header {
     color: red;
 }
 

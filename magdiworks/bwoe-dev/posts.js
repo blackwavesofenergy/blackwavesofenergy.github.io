@@ -1,8 +1,8 @@
 const posts = [
     {
         title: "REVIEW | metal gear solid",
+        url: "https://www.backloggd.com/games/metal-gear-solid/",
         content: [
-            "real my full review here",
             "It's no secret how poorly the 5th generation of consoles aged."
         ],
         date: "2024-02-11",
