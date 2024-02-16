@@ -42,7 +42,7 @@ body {
 .links {
     font-variant: small-caps;
     font-size: 32pt;
-    margin-top: 8.5vh;
+    margin-top: 16%;
     margin-left: 2vh;
     flex: 1;
 }
@@ -56,7 +56,7 @@ main {
 .hyellow {
     font-family: teletextExtended;
     color: yellow;
-    font-size: 54pt;
+    font-size: 42pt;
     display: grid;
     text-align: center;
     justify-content: center;
@@ -131,6 +131,15 @@ ul, li, a {
 #steam-link:hover {
     color: transparent;
     background-image: linear-gradient(to right, #06183b, #137daf); /* Set your gradient colors */
+    background-clip: text;
+    -webkit-background-clip: text;
+    position: relative;
+    z-index: 1;
+}
+
+#playstation-link:hover {
+    color: transparent;
+    background-image: linear-gradient(to right, #1355e1, #fdfdfd); /* Set your gradient colors */
     background-clip: text;
     -webkit-background-clip: text;
     position: relative;
