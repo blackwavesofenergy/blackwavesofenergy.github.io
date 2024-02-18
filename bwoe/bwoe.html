@@ -9,7 +9,7 @@
     <title>bwoe - coming soon</title>
 </head>
 <body style="background-color: black;">
-<div class="content">
+<div class="content hide">
     <div class="container">
         <ul class="links">
             <li><a href="https://flickr.com/photos/blackwavesofenergy/" target="_blank" id="flickr-link">Flickr</a></li>
@@ -20,6 +20,7 @@
             <li><a href="https://www.youtube.com/@bwoeYT" target="_blank" id="youtube-link">YouTube</a></li>
             <li><a href="https://steamcommunity.com/id/bwoe" target="_blank" id="steam-link">Steam</a></li>
             <li><a href="https://psnprofiles.com/bwofenergy" id="playstation-link">PlayStation</a></li>
+            <li><a href="https://retroachievements.org/user/bwoe" id="ra-link">RetroAchievements</a><span class="new-text">NEW!</span></li>
         </ul>
     </div>
 
@@ -28,8 +29,19 @@
         <source src="assets/logo.webm" type="video/webm"> Your browser is wack. </video>
 </main>
 </div>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+    const video = document.querySelector("video");
+    const content = document.querySelector(".content");
+
+    video.addEventListener("loadeddata", function() {
+        content.classList.remove("hide");
+        content.classList.add("fade-in");
+    });
+});
+
+</script>
 
 <footer class="hyellow">full site coming soon</footer>
-
 </body>
 </html>
