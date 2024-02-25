@@ -147,10 +147,6 @@ footer a {
         background-color: black;
         color: white;
     }
-
-    .elements a:hover {
-      border: 3px solid black;
-    }
     
     a {
         color: white;

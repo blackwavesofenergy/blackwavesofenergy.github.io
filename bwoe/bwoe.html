@@ -6,7 +6,6 @@
     <meta name="description" content="Coming soon page for bwoe">
     <link rel="stylesheet" href="./styles.css">
     <link rel="icon" type="image/x-icon" href="./assets/favicon.ico">
-    <script defer data-domain="bwoe.uk" src="https://plausible.io/js/script.js"></script>
     <title>bwoe - coming soon</title>
 </head>
 <body style="background-color: black;">
@@ -35,15 +34,20 @@
 </main>
 </div>
 <script>
-    document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function() {
     const video = document.querySelector("video");
     const content = document.querySelector(".content");
 
-    video.addEventListener("loadeddata", function() {
-        content.classList.remove("hide");
-        content.classList.add("fade-in");
-    });
+    // Set a timeout to check if the loadeddata event has occurred
+    setTimeout(function() {
+        if (!content.classList.contains("fade-in")) {
+            // If the loadeddata event hasn't occurred, add the fade-in class manually
+            content.classList.remove("hide");
+            content.classList.add("fade-in");
+        }
+    }, 0); // Set a timeout of 5 seconds (you can adjust this value as needed)
 });
+
 
 </script>
 
