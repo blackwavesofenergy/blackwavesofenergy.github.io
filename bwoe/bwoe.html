@@ -34,20 +34,15 @@
 </main>
 </div>
 <script>
-document.addEventListener("DOMContentLoaded", function() {
+    document.addEventListener("DOMContentLoaded", function() {
     const video = document.querySelector("video");
     const content = document.querySelector(".content");
 
-    // Set a timeout to check if the loadeddata event has occurred
-    setTimeout(function() {
-        if (!content.classList.contains("fade-in")) {
-            // If the loadeddata event hasn't occurred, add the fade-in class manually
-            content.classList.remove("hide");
-            content.classList.add("fade-in");
-        }
-    }, 0); // Set a timeout of 5 seconds (you can adjust this value as needed)
+    video.addEventListener("loadeddata", function() {
+        content.classList.remove("hide");
+        content.classList.add("fade-in");
+    });
 });
-
 
 </script>
 
