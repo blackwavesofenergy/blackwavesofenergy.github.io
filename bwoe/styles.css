@@ -192,6 +192,15 @@ ul, li, a {
     z-index: 1;
 }
 
+#anilist-link:hover {
+    color: transparent;
+    background-image: linear-gradient(to right, #fefefe, #02a9ff); /* Set your gradient colors */
+    background-clip: text;
+    -webkit-background-clip: text;
+    position: relative;
+    z-index: 1;
+}
+
 
 @media screen and (max-width: 720px) {
     
