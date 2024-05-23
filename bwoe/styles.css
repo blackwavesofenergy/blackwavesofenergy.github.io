@@ -42,7 +42,6 @@ body {
     align-items: center;
     max-width: 100%;
     padding: 0;
-    margin-top: 20vh;
 }
 
 .hide {
@@ -83,32 +82,19 @@ main {
     flex: 1;
 }
 
-.hyellow {
-    font-family: teletextExtended;
-    color: yellow;
-    font-size: 3.2rem;
-    display: grid;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    bottom: 0;
-    padding: 0;
-    margin: 0;
-    width: 100%;
-    margin-top: auto;
-    padding-bottom: 5vh;
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none; 
-}
-
 .new-text {
     color: yellow;
     font-size: 0.75rem;
     vertical-align: middle;
     margin-left: 10px;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.2s ease-in-out;
+}
+
+li a:hover + .new-text {
+    visibility: visible;
+    opacity: 1; 
 }
 
 ul, li, a {
@@ -116,10 +102,16 @@ ul, li, a {
     text-decoration: none;
     list-style: none;
     font-family: teletextSemiCondensed;
+    position: relative;
 }
 
 
 /*for links*/
+
+#blog-link:hover {
+    color: yellow;
+}
+
 #flickr-link:hover {
     color: transparent;
     background-image: linear-gradient(to right, #0063dc, #ff0084); /* Set your gradient colors */
