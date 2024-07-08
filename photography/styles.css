@@ -113,7 +113,7 @@ footer a {
   }
 
   .navigation button {
-    font: Light, sans-serif !important;
+    font-family: Light, sans-serif !important;
     font-size: 20pt;
     border: none;
     color: white;
