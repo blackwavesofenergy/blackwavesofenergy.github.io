@@ -93,38 +93,43 @@
       </div>
     
       <script>
-        document.addEventListener("DOMContentLoaded", function() {
-          var gallery1 = document.getElementById('gallery1');
-          var gallery2 = document.getElementById('gallery2');
-          var prevBtn = document.getElementById('prevBtn');
-          var nextBtn = document.getElementById('nextBtn');
-    
-          nextBtn.addEventListener('click', function() {
-            gallery1.style.display = 'none';
-            gallery2.style.display = 'block';
-            prevBtn.style.display = 'inline';
-            nextBtn.style.display = 'none';
-          });
-    
-          prevBtn.addEventListener('click', function() {
-            gallery1.style.display = 'block';
-            gallery2.style.display = 'none';
-            prevBtn.style.display = 'none';
-            nextBtn.style.display = 'inline';
-          });
-    
-          var galleryImages = document.querySelectorAll('.gallery img');
-          var loadedCount = 0;
-    
-          galleryImages.forEach(function(img) {
-            img.addEventListener('load', function() {
-              loadedCount++;
-              if (loadedCount === galleryImages.length) {
-                document.body.classList.add('loaded');
-              }
-            });
-          });
-        });
+document.addEventListener("DOMContentLoaded", function() {
+  var gallery1 = document.getElementById('gallery1');
+  var gallery2 = document.getElementById('gallery2');
+  var prevBtn = document.getElementById('prevBtn');
+  var nextBtn = document.getElementById('nextBtn');
+
+  nextBtn.addEventListener('click', function() {
+    gallery1.style.display = 'none';
+    gallery2.style.display = 'flex'; // Change from 'block' to 'flex'
+    gallery1.classList.remove('loaded');
+    gallery2.classList.add('loaded');
+    prevBtn.style.display = 'inline';
+    nextBtn.style.display = 'none';
+  });
+
+  prevBtn.addEventListener('click', function() {
+    gallery1.style.display = 'flex'; // Change from 'block' to 'flex'
+    gallery2.style.display = 'none';
+    gallery1.classList.add('loaded');
+    gallery2.classList.remove('loaded');
+    prevBtn.style.display = 'none';
+    nextBtn.style.display = 'inline';
+  });
+
+  var galleryImages = document.querySelectorAll('.gallery img');
+  var loadedCount = 0;
+
+  galleryImages.forEach(function(img) {
+    img.addEventListener('load', function() {
+      loadedCount++;
+      if (loadedCount === galleryImages.length) {
+        document.body.classList.add('loaded');
+      }
+    });
+  });
+});
+
       </script>
     </main>
     

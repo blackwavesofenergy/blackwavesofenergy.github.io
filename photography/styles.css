@@ -77,20 +77,20 @@ footer a {
 }
   
 .gallery {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 5px;
-    max-width: 90%;
-    margin: 0 auto;
-    padding: 25px;
-    overflow: hidden;
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity 0.8s ease, visibility 0s 0.5s;
-  }
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  max-width: 90%;
+  margin: 0 auto;
+  padding: 25px;
+  overflow: hidden;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.8s ease, visibility 0s 0.5s;
+}
 
   #gallery2 {
       display: flex;
@@ -113,7 +113,7 @@ footer a {
   }
 
   .navigation button {
-    font: Light, sans-serif;
+    font: Light, sans-serif !important;
     font-size: 20pt;
     border: none;
     color: white;
