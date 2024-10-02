@@ -19,7 +19,7 @@
         </ul>
       </header>
     
-      <div class="gallery" id="gallery1">
+      <div class="gallery" id="gallery1" style="display: flex;">
         <a href="https://www.flickr.com/photos/blackwavesofenergy/52714559863/" target="_blank"><img src="gallery/1.jpeg" loading="lazy"></a>
         <a href="https://www.flickr.com/photos/blackwavesofenergy/52724012428/" target="_blank"><img src="gallery/2.jpeg" loading="lazy"></a>
         <a href="https://www.flickr.com/photos/blackwavesofenergy/52724539989/" target="_blank"><img src="gallery/3.jpeg" loading="lazy"></a>
@@ -52,7 +52,7 @@
         <a href="https://www.flickr.com/photos/blackwavesofenergy/52702131713/" target="_blank"><img src="gallery/30.jpeg" loading="lazy"></a>
       </div>
     
-      <div class="gallery" id="gallery2" style="display:none;">
+      <div class="gallery" id="gallery2" style="display: none;">
         <a href="https://flickr.com/photos/blackwavesofenergy/53719645125/" target="_blank"><img src="gallery/31.jpeg" loading="lazy"></a>
         <a href="https://flickr.com/photos/blackwavesofenergy/53790212755/" target="_blank"><img src="gallery/32.jpeg" loading="lazy"></a>
         <a href="https://flickr.com/photos/blackwavesofenergy/53806055616/" target="_blank"><img src="gallery/33.jpeg" loading="lazy"></a>
@@ -91,43 +91,48 @@
       </div>
     
       <script>
-document.addEventListener("DOMContentLoaded", function() {
-  var gallery1 = document.getElementById('gallery1');
-  var gallery2 = document.getElementById('gallery2');
-  var prevBtn = document.getElementById('prevBtn');
-  var nextBtn = document.getElementById('nextBtn');
-
-  nextBtn.addEventListener('click', function() {
-    gallery1.style.display = 'none';
-    gallery2.style.display = 'flex'; // Change from 'block' to 'flex'
-    gallery1.classList.remove('loaded');
-    gallery2.classList.add('loaded');
-    prevBtn.style.display = 'inline';
-    nextBtn.style.display = 'none';
-  });
-
-  prevBtn.addEventListener('click', function() {
-    gallery1.style.display = 'flex'; // Change from 'block' to 'flex'
-    gallery2.style.display = 'none';
-    gallery1.classList.add('loaded');
-    gallery2.classList.remove('loaded');
-    prevBtn.style.display = 'none';
-    nextBtn.style.display = 'inline';
-  });
-
-  var galleryImages = document.querySelectorAll('.gallery img');
-  var loadedCount = 0;
-
-  galleryImages.forEach(function(img) {
-    img.addEventListener('load', function() {
-      loadedCount++;
-      if (loadedCount === galleryImages.length) {
-        document.body.classList.add('loaded');
-      }
-    });
-  });
-});
-
+        document.addEventListener("DOMContentLoaded", function () {
+          var gallery1 = document.getElementById('gallery1');
+          var gallery2 = document.getElementById('gallery2');
+          var prevBtn = document.getElementById('prevBtn');
+          var nextBtn = document.getElementById('nextBtn');
+    
+          // Function to show gallery1 and hide gallery2
+          function showGallery1() {
+            gallery1.style.display = 'flex';
+            gallery2.style.display = 'none';
+            prevBtn.style.display = 'none';
+            nextBtn.style.display = 'inline';
+          }
+    
+          // Function to show gallery2 and hide gallery1
+          function showGallery2() {
+            gallery1.style.display = 'none';
+            gallery2.style.display = 'flex';
+            prevBtn.style.display = 'inline';
+            nextBtn.style.display = 'none';
+          }
+    
+          // Add click event listeners
+          nextBtn.addEventListener('click', showGallery2);
+          prevBtn.addEventListener('click', showGallery1);
+    
+          // Image loading handler (optional but useful for feedback)
+          var galleryImages = document.querySelectorAll('.gallery img');
+          var loadedCount = 0;
+    
+          galleryImages.forEach(function (img) {
+            img.addEventListener('load', function () {
+              loadedCount++;
+              if (loadedCount === galleryImages.length) {
+                document.body.classList.add('loaded');
+              }
+            });
+          });
+    
+          // Ensure gallery1 is visible on page load
+          showGallery1();  // Call this to ensure gallery1 is displayed first
+        });
       </script>
     </main>
     
