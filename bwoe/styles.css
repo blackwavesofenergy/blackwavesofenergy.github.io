@@ -112,6 +112,11 @@ ul, li, a {
     color: yellow;
 }
 
+ul li:first-of-type {
+    margin-bottom: 2px; /* Adjust the gap size as needed */
+    font-size: 110%
+}
+
 #flickr-link:hover {
     color: transparent;
     background-image: linear-gradient(to right, #0063dc, #ff0084); /* Set your gradient colors */
@@ -187,6 +192,15 @@ ul, li, a {
 #anilist-link:hover {
     color: transparent;
     background-image: linear-gradient(to right, #fefefe, #02a9ff); /* Set your gradient colors */
+    background-clip: text;
+    -webkit-background-clip: text;
+    position: relative;
+    z-index: 1;
+}
+
+#rym-link:hover {
+    color: transparent;
+    background-image: linear-gradient(to right, #e5e5e5, #81c1e9, #2f52a1); /* Set your gradient colors */
     background-clip: text;
     -webkit-background-clip: text;
     position: relative;
