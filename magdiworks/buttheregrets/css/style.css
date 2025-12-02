@@ -69,7 +69,7 @@ body {
 }
 
 .scroll-in {
-    opacity: 0; !important;
+    opacity: 0 !important;
 }
 
 .text-muted {
